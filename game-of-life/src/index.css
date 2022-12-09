@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('/public/images/squareBg.jpg');
+}
+.off {
+    background-color: lightgray;
+}
+
+.on {
+    background-color: green;
+}
