@@ -2,9 +2,18 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx}",
+    "./public/**/*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'dalek': ['Dalek Pinpoint']
+      },
+      backgroundImage: {
+        'scroll': "url('images/rotulus.png')"
+      },
+     
+    },
   },
   plugins: [],
 }
