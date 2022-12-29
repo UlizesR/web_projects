@@ -42,6 +42,8 @@ export default function RegisterPage() {
                         <button className='bg-amber-500 font-dalek text-white hover:text-violet-800 m-4 p-2 rounded-lg min-[250px]:w-36'>Sign Up</button>
                     </Link>
 
+                    <h8 className='text-zinc-500 text-xs font-dalek'>already have an account? <Link href='/login' className='text-cyan-500 hover:underline'>Login</Link></h8>
+
                 </div>
             </div>
         </>
