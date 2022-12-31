@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import DirectMsg from '../components/user_page/DirectMsg'
 
 export default function direct_messages() {
   return (
@@ -10,7 +11,7 @@ export default function direct_messages() {
             <link rel="icon" href="/hermes_logo.png" />
         </Head>
 
-        <div>direct_messages</div>
+        <DirectMsg />
     </>
   )
 }

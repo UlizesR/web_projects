@@ -11,34 +11,25 @@ module.exports = {
         'dalek': ['Dalek Pinpoint']
       },
       backgroundImage: {
-        "hermes": "url('/public/white_hermes_sandal.png')",
+        "volumen": "url('/images/hermesrotulus_volumen.png')",
+        "rotulus": "url('/images/hermesrotulus_volumen2.png')",
+      },
+      padding: {
+        '1/10': '10%',
+        '1/5': '20%',
+      },
+      minHeight: {
+        '4tf': '435px',
+        '5f': '550px'
+      },
+      maxHeight: {
+        '7h': '700px'
       },
       minWidth: {
         '2e': '280px',
-        '3h': '300px',
-        '3t': '320px',
-        '4h': '400px',
-        '5h': '500px',
-        '5ss': '576px',
-        '8h': '800px',
-        '6_8': '608px',
-        '1t': '1100px'
-      },
-      minHeight: {
-        '3f': '350px',
-        '4h': '400px',
-        '4f': '450px',
-        '5f': '550px',
-        '1t': '1100px'
-      },
-      maxWidth: {
-        '8h': '800px'
-      },
-      maxHeight: {
-        '4/5': '80%'
-      },
-      width: {
-        '100': '400px'
+        '3e': '380px',
+        '5sf': '575px',
+        '7h': '700px'
       }
     },
   },
