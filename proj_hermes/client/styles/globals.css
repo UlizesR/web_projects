@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .user-icon {
+        @apply relative flex items-center justify-center 
+        h-20 w-20  m-auto hover:text-violet-700;
+    }
+}
