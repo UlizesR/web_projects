@@ -1,14 +1,12 @@
 import React from 'react'
-import ChatBox from './Chat/ChatBox'
-import SideBar from './Chat/SideBar'
+import { Sidebar } from './chat-page/sidebar/Sidebar'
+import { ChatBox } from './chat-page/chat-box/ChatBox'
 
-export default function ChatPage() {
+export default function ChatPage({ page }) {
   return (
-    <div className='bg-slate-600 h-screen flex items-center justify-center'>
-      <div className='border-solid border-white border-[1px] rounded-[10px] flex overflow-hidden w-2/3 h-4/5'>
-        <SideBar />
+    <div className='bg-slate-600 min-h-fit w-screen h-screen flex '>
+        <Sidebar page={page}/>
         <ChatBox />
-      </div>
     </div>
   )
 }
