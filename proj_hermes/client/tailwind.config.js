@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'volumen': 'url("/images/hermesrotulus_volumen.png")',
+        'rotulus': 'url("/images/hermesrotulus_volumen2.png")'
+      },
       fontFamily: {
         'dalek': 'Dalek Pinpoint'
       },

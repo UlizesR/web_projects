@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function LoginPage() {
   return (
-    <div className='bg-slate-600 h-screen flex items-center justify-center'>
-        <div className='bg-zinc-800 py-5 px-[60px] rounded-xl flex flex-col gap-2.5 items-center'>
+    <div className='min-w-screen bg-slate-600 h-screen flex items-center justify-center'>
+        <div className='min-h-fit max-h-screen max-[350px]:w-screen max-[350px]:rounded-none h-fit bg-zinc-800 py-5 px-[60px] rounded-xl flex flex-col gap-2.5 items-center'>
             {/* Tittle of Page */}
             <span className='text-white text-2xl font-dalek'>Hermes Chat</span>
             <span className='text-white text-xs font-dalek'>Login</span>
@@ -23,7 +24,11 @@ export default function LoginPage() {
             </form>
 
             {/* To redirect someone to the login page */}
-            <p className='text-zinc-500 font-dalek text-xs mt-2.5'>Don't have an account? Register</p>
+            <p className='text-zinc-500 font-dalek text-xs text-center mt-2.5'>Don't have an account? 
+                <Link href='/register' className='text-cyan-500 hover:underline'>
+                    Register
+                </Link>
+            </p>
         </div>
     </div>
   )
