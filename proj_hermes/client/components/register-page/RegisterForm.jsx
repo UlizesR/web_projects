@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaRegUserCircle } from 'react-icons/fa' 
 
-export const RegisterForm = () => {
+export const RegisterForm = ({setFirstName, setLastName, setUsername, setPassword}) => {
     return (
         <form className=' flex flex-col gap-[15px] items-center'>
         <div className='flex flex-col justify-center items-center gap-4 sm:grid sm:grid-cols-2 sm:justify-items-end '>

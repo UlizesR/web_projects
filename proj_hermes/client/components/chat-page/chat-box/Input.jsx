@@ -19,8 +19,8 @@ export const Input = ({ message, setMessage }) => {
         messageWrapper.className = 'flex justify-end w-full p-2.5 items-center gap-2 hover:bg-slate-700'
         messageDiv.className = 'block w-fit text-white text-lg p-2.5 rounded-t-lg rounded-l-lg bg-zinc-800'
 
-        const username = document.createTextNode('username')
-        messageDiv.appendChild(username)
+        // const username = document.createTextNode('username')
+        // messageDiv.appendChild(username)
         // makes the content that's going to be added
         const messageText = document.createTextNode(message);
 
