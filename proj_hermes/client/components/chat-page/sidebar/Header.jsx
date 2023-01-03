@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { TiThMenu } from 'react-icons/ti'
+import { BsFillChatRightTextFill } from 'react-icons/bs'
 
 export const Header = ({ page }) => {
+    
     let channel = ''
     const text = page == '@me' ? 'Direct Messages': 'Rooms'
     text == 'Direct Messages'? (channel = 'rooms') : (channel = '@me')
@@ -22,7 +23,7 @@ export const Header = ({ page }) => {
                 <button className='text-white text-center text-4xl font-dalek hover:text-amber-500'>{'>'}</button>
             </Link>
             <div onClick={onClick} className='flex items-center text-white hover:text-amber-500 sm:hidden'>
-                <TiThMenu size='30'/>
+                <BsFillChatRightTextFill size='30'/>
             </div>
         </div>
     )

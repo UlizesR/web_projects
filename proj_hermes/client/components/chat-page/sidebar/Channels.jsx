@@ -11,8 +11,8 @@ export const Channels = ({ page }) => {
     }
 
     return (
-        <div className='min-h-[350px] h-[calc(100%-160px)] w-full p-5'>
-            <div className='min-h-full h-full w-full bg-zinc-800 rounded-xl p-5 flex flex-col  items-center'>
+        <div className='min-h-[350px] h-[calc(100%-160px)] max-sm:flex max-sm:justify-center w-full p-5'>
+            <div className='min-h-full h-full w-full max-sm:w-2/3 bg-zinc-800 rounded-xl p-5 flex flex-col items-center'>
                 <span className='text-white text-center text-3xl font-dalek my-2'>{text}</span>
                 <div className='w-4/5 h-1 bg-white rounded-full my-2'/>
                 <SearchBar page={page} />
