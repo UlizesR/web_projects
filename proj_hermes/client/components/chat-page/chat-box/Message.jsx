@@ -1,13 +1,17 @@
 import React from 'react'
 import { FaRegUserCircle } from 'react-icons/fa' 
 
-export const Message = ({ message }) => {
+export const Message = (messageData) => {
+
   return (
-    <div className='flex justify-end w-full p -5 items-center gap-2 hover:bg-slate-700'>
-        <div className='text-white text-lg p-2.5 rounded-t-lg rounded-l-lg bg-zinc-800'>
-            {message}
+    <div className='flex h-fit w-full p-2.5 gap-1 items-center hover:bg-slate-700'>
+      <FaRegUserCircle size='50' className='self-start'/>
+      <div className=' h-fit w-fit flex flex-col'>
+        <span className='text-xs font-dalek'>{messageData.username} : {messageData.time}</span>
+        <div className='text-white text-lg'>
+          {messageData.message}
         </div>
-        <FaRegUserCircle size='40'/>
+      </div>
     </div>
   )
 }

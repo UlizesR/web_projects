@@ -10,6 +10,8 @@ export const RegisterPage = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
+    const emptyString = ''
+
     return (
         <div className='min-w-screen bg-slate-600 h-screen flex items-center justify-center'>
             <div className='min-h-fit max-h-screen max-[350px]:h-screen max-[350px]:w-screen max-[350px]:rounded-none bg-zinc-800 py-5 px-[60px] rounded-xl flex flex-col gap-2.5 items-center'>
