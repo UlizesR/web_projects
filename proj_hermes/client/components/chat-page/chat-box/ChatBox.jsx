@@ -5,7 +5,7 @@ import { Input } from './Input'
 
 
 
-export const ChatBox = ({socket}) => {
+export const ChatBox = () => {
 
   const [message, setMessage] = useState("") 
   const [messageList, setMessageList] = useState([])
@@ -14,7 +14,7 @@ export const ChatBox = ({socket}) => {
     <div id='chatBox' className='min-h-fit h-full w-full flex-2 flex-col max-sm:hidden'>
         <Header />
         <MessageBox messageList={messageList}/>
-        <Input socket={socket} message={message} setMessage={setMessage} setMessageList={messageList} />
+        <Input  message={message} setMessage={setMessage} setMessageList={messageList} />
     </div>
   )
 }

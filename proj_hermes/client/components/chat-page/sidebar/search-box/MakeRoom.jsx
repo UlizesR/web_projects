@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaRegUserCircle } from 'react-icons/fa' 
 
-export const MakeRoom = ({ setMakeRoom, setShowSearchBox }) => {
+export const MakeRoom = (props) => {
     return (
         <div className='h-fit w-fit flex flex-col gap-5 items-center inset-0'>
                 <div className='flex flex-col items-center px-2.5 w-full '>
@@ -19,7 +19,10 @@ export const MakeRoom = ({ setMakeRoom, setShowSearchBox }) => {
             <Link href='/channels/rooms'>
                 <button 
                     className='bg-amber-500 py-2 px-5 text-lg font-dalek rounded-lg cursor-pointer hover:bg-violet-800 hover:text-amber-500'
-                    onClick={() => {setMakeRoom(false); setShowSearchBox(false)}}
+                    onClick={() => {
+                        props.setMakeRoom(false)
+                        props.setShowSearchBox(false)
+                    }}
                 >
                     make room
                 </button>

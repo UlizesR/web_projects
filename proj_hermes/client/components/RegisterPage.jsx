@@ -1,16 +1,28 @@
-import React, {useState} from 'react'
+import React, {useContext} from 'react'
 import Link from 'next/link'
+import { Context } from '../context'
 
 import { RegisterForm } from './register-page/RegisterForm'
 
-export const RegisterPage = () => {
+export const RegisterPage = (props) => {
 
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('')
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
+    const {
+        firstName,
+        setFirstName,
+        lastName,
+        setLastName,
+        username,
+        setUsername,
+        password,
+        setPassword,
+    } = useContext(Context)
 
     const emptyString = ''
+
+    function onSubmit(e) {
+        e.preventDefault()
+        
+    }
 
     return (
         <div className='min-w-screen bg-slate-600 h-screen flex items-center justify-center'>

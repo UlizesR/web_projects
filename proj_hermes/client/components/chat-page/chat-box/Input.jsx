@@ -4,25 +4,25 @@ import { RiImageAddFill, RiFileAddLine } from 'react-icons/ri'
 import { MdOutlineEmojiEmotions } from 'react-icons/md'
 
 
-export const Input = ({socket, message, setMessage, setMessageList }) => {
+export const Input = (props) => {
 
-    const sendMessage = async () => {
-        if (message !== "") {
-            const messageData = {
-                username: 'username',
-                message: message,
-                time: new Date(Date.now()).getHours() + ':' + new Date(Date.now()).getMinutes()
-            }
-            await socket.emit("send_message", messageData)
-            setMessageList((list) => [...list, messageData])
-        }
-    }
+    // const sendMessage = async () => {
+    //     if (props.message !== "") {
+    //         const messageData = {
+    //             username: 'username',
+    //             message: props.message,
+    //             time: new Date(Date.now()).getHours() + ':' + new Date(Date.now()).getMinutes()
+    //         }
+    //         await props.socket.emit("send_message", messageData)
+    //         props.setMessageList((list) => [...list, messageData])
+    //     }
+    // }
 
-    useEffect(() => {
-        socket.on("receive_message", (data) => {
-            setMessageList((list) => [...list, data])
-        })
-    }, [socket])
+    // useEffect(() => {
+    //     props.socket.on("receive_message", (data) => {
+    //         props.setMessageList((list) => [...list, data])
+    //     })
+    // }, [props.socket])
     
     return (
         <div className='h-20 px-4 bg-slate-600'>
@@ -31,7 +31,7 @@ export const Input = ({socket, message, setMessage, setMessageList }) => {
                     type='text' 
                     id='messageInput' 
                     placeholder='Type Something...' 
-                    onChange={(event) => {setMessage(event.target.value)}} 
+                    onChange={(event) => {props.setMessage(event.target.value)}} 
                     className='bg-transparent text-white w-full text-lg border-none outline-none'
                 />
                 <MdOutlineEmojiEmotions size='35' className='text-white hover:text-amber-500'/>
@@ -43,7 +43,7 @@ export const Input = ({socket, message, setMessage, setMessageList }) => {
                     </label>
                 </div>
                 <button 
-                    onClick={sendMessage} 
+                    // onClick={sendMessage} 
                     id='send' 
                     className='p-2.5 text-white text-sm font-dalek bg-amber-500 rounded-lg hover:bg-violet-800 hover:text-amber-500 cursor-pointer'
                 >
