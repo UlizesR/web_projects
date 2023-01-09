@@ -11,6 +11,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
+      <div className='h-screen flex flex-col bg-slate-600'>
+          <div className='w-full flex justify-between items-center h-20 bg-zinc-800 text-white p-5'>
+            <p>Hermes Chat</p>
+            <div className='flex gap-5'>
+              <button>Download</button>
+              <button>About</button>
+              <button>Support</button>
+            </div>
+          </div>
+      </div>
     </>
   )
 }
