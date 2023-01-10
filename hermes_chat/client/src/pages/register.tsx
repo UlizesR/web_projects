@@ -10,8 +10,6 @@ import white_hermes_sandal from '../../public/assets/white_hermes_sandal.png'
 
 export default function register() {
 
-    const [profile, setProfile] = useState<Boolean>(false);
-    const [img, setImg] = useState<string>('')
     return (
         <Layout>
             <Head>
@@ -21,7 +19,7 @@ export default function register() {
                 <link rel="icon" href="/assets/hermes_logo.png" />
             </Head>
 
-            <section className='w-3/4 h-full mx-auto flex flex-col justify-around sm:justify-between py-5'>
+            <section className='w-3/4 h-full  mx-auto flex flex-col justify-around sm:justify-between py-5'>
                 {/* Logo */}
                 <div className='flex justify-center items-center'>
                     <Image src={white_hermes_sandal} alt='logo' height={50}/>
@@ -33,7 +31,7 @@ export default function register() {
                     <h2 className='text-[#b5bbb3]'>Ready to Register</h2>
                 </div>
                 {/* Form */}
-                <form className='flex flex-col items-center gap-10'>
+                <form className='flex flex-col items-center gap-10' onSubmit={(e) => e.preventDefault()}>
                     {/* Info Input */}
                     <div className='w-full sm:w-4/5 flex flex-col gap-5'>
                         <div className={styles.input_group}>

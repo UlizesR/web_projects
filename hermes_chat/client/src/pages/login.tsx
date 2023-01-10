@@ -8,6 +8,7 @@ import styles from '../../styles/Form.module.css'
 import white_hermes_sandal from '../../public/assets/white_hermes_sandal.png'
 
 export default function login() {
+
     return (
         <Layout>
             <Head>
@@ -29,7 +30,7 @@ export default function login() {
                     <h2 className='text-[#b5bbb3]'>Ready to Login</h2>
                 </div>
                 {/* Form */}
-                <form className='flex flex-col items-center gap-10'>
+                <form className='flex flex-col items-center gap-10' onSubmit={(e) => e.preventDefault()}>
                     {/* Info Input */}
                     <div className='w-full sm:w-4/5 flex flex-col gap-5'>
                         <div className={styles.input_group}>

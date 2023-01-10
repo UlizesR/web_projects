@@ -9,7 +9,7 @@ interface Props{
 export const Layout = ({children, ...props}:Props) => {
   return (
     <div className='flex h-screen bg-[#161925] '>
-        <div className='m-auto bg-[#353c59] rounded-xl  h-fit w-full sm:w-3/5 sm:h-3/5 flex  overflow-hidden'>
+        <div className='m-auto bg-[#353c59] rounded-xl h-fit w-full sm:w-3/5 sm:h-3/5 flex  overflow-hidden'>
             <div className='relative h-full w-1/2 max-lg:hidden'>
                 <Image src={hermes} sizes="(min-width: 768px) 100vw"  alt='hermes' fill/>
             </div>
