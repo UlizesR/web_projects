@@ -1,0 +1,15 @@
+
+.input_group {
+    @apply w-full flex flex-col gap-2.5 ;
+    position: relative;
+}
+
+.input_text {
+    @apply w-full px-4 py-2  font-bold  rounded-xl;
+    @apply focus:outline-none border-none;
+}
+
+.button {
+    @apply w-1/2 text-xl text-white bg-[#b19100] py-4 rounded-xl;
+    @apply hover:bg-violet-800 hover:text-[#f8cb01] hover:cursor-pointer;
+}
